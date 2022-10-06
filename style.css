@@ -1,0 +1,250 @@
+/*GENERAL*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("images/bg.jpg") center top;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+h2 {
+    color: #1F2937;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.button,
+button {
+    background-color: #0d7422;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/*HEAD*/
+header {
+    background-color: #1F2937;
+
+    color: #F9FAF8;
+
+    padding: 10px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a.logo {
+    display: block;
+    position: relative;
+    width: 150px;
+}
+
+header a.logo img {
+    width: 60px;
+}
+
+header a.logo span {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 10px;
+    font-size: 34px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+
+
+
+/*hero*/
+.hero {
+    background-color: #49522f;
+    color: #F9FAF8;
+    padding: 20px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-desc{
+    margin-right: 20px;
+}
+.hero img {
+    max-width: 100%;
+    width: 400px;
+}
+
+/*SECTIONS*/
+.sections {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    color: white;
+}
+
+.sections h2 {
+    color: white;
+}
+
+.sections .container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sections .container ul li {
+    width: 120px;
+    flex: 1;
+}
+
+.sections .figure {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.sections .figure img {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+}
+
+/*QUOTE*/
+.quote-container {
+    padding: 40px 0;
+}
+
+.quote {
+    border-radius: 6px;
+    background-color: #207840;
+    color: #fff;
+    font-style: italic;
+    font-weight: light;
+    font-size: 26px;
+    padding: 20px;
+}
+
+.quote p {
+    margin: 0;
+}
+
+.quote span {
+    display: block;
+    text-align: right;
+}
+
+/*CALL TO ACTION*/
+.action-container {
+    padding: 40px 0;
+}
+
+.action-container .container {
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f4021;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    background-size: cover;
+    background-image: url("images/head-bg.jpg");
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1F2937;
+    color: rgba(255, 255, 255, 0.425);
+    text-align: center;
+    padding: 15px 0;
+}
+
+/*RESPONSIVE*/
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    header .container{
+        flex-direction: column;
+    }
+    header a.logo span {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .sections .container ul {
+        flex-direction: column;
+    }
+
+    .sections .container ul li {
+        width: 100%;
+    }
+    .hero .container {
+        flex-direction: column-reverse;
+    }
+    .action-container .container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        width: 1200px;
+    }
+}

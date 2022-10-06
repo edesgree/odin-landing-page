@@ -27,7 +27,7 @@ h1 {
 h2 {
     color: #1F2937;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .button,
@@ -85,9 +85,6 @@ header nav ul {
     gap: 10px;
     font-size: 14px;
 }
-
-
-
 
 /*hero*/
 .hero {
